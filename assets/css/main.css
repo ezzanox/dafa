@@ -1,8 +1,11 @@
 body{
     font-family: 'Quicksand';
-    /* background-image: url("../img/bg-img.png");
+    /* background image */
+    background-image: url('../img/bg-image.png');
     background-repeat: no-repeat;
-    background-attachment: fixed; */
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: auto;
 }
 
 @media (min-width: 1200px) {
@@ -78,9 +81,28 @@ body{
     color: white;
 }
 
+.bg-orange{
+    background-color: #F69522;
+    color: white;
+}
+
+.bg-white-t-orange{
+    background-color: white;
+    color: #F69522;
+}
+
+.bg-white{
+    background-color: white;
+}
+
 /* border-biru terang 1px */
 .b-biru-terang-1{
     border: 1px solid #007FD8;
+}
+
+/* table border orange */
+.tb-orange{
+    border: 1px solid #F69522;
 }
 
 /* font weight style  */
@@ -174,6 +196,8 @@ body{
     }
 }
 
+
+
 /* PAGE DETAIL MEDICAL */
 @media (min-width: 768px) {
     .table-detail{
@@ -184,6 +208,11 @@ body{
 /* PAGE REGISTER */
 .panduan{
     height: 50%;
+}
+
+/* PAGE ATTEND */
+.table-attend{
+    border: 1px solid red !important;
 }
 
 
