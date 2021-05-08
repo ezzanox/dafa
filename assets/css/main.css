@@ -70,6 +70,19 @@ body{
     color: white;
 }
 
+/* button red */
+.btn-red{
+    background-color: #FF0204;
+    color: white;
+}
+
+/* button green */
+.btn-green{
+    background-color: #0BD002;
+    color: white;
+}
+
+
 .btn-blue{
     background-color: #013356;
     color:white;
@@ -241,3 +254,21 @@ body{
 .checkout h2{
     color: white;
 }
+
+/* REGISTER */
+
+/* change color border */
+
+
+/* violation border color */
+
+/* CHECK */
+.card-check{
+    border: solid 2px #F69522 ;
+}
+
+@media (min-width: 1024px) {
+    .card-check {
+      width: 400px;
+    }
+  }
