@@ -21,6 +21,11 @@ body {
     height:100%;
 }
 
+/* button same width */
+.btn-same-w{
+    width: 100px;
+}
+
 /* login style mobile */
 @media (max-width: 768px) {
     .login-page .left-content, .login-page .right-content{
