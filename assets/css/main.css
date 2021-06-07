@@ -2,15 +2,30 @@ body,html{
     height: 100%;
 }
 
-body{
-    font-family: 'Quicksand';
-    /* background image */
-    background-image: url('../img/bg-image.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: auto;
+.cover-container {
+    height: 100vh;
 }
+
+/* img background doodle */
+body {
+    background: url('../img/bg-image.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height:100%;
+}
+
+/* login style mobile */
+@media (max-width: 768px) {
+    .login-page .left-content, .login-page .right-content{
+        border: 1px solid #DEE2E6;
+        margin: 10px;
+        padding: 15px;
+    }
+    
+  }
+
 
 @media (min-width: 1200px) {
     .container {
@@ -44,6 +59,10 @@ body{
 /* text line heigy */
 .lh-16{
     line-height: 16px;
+}
+
+.lh-18{
+    line-height: 18px;
 }
 
 /* text style color */
@@ -129,7 +148,7 @@ body{
 
 /* font size style */
 .fst-16{
-    font-size: 14px;
+    font-size: 16px;
 }
 /* siswa */
 
