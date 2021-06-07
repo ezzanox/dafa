@@ -199,6 +199,20 @@ body {
     border-color: #013356;
 }
 
+/* PENGAJAR */
+.pengajar-login input:focus::placeholder {
+    color: transparent;
+}
+
+.pengajar-login .form-control:focus {
+    border-color: #F69522;
+    box-shadow: none;
+}
+
+.pengajar-login .form-control {
+    border-color: #F69522;
+}
+
 @media (max-width: 768px) {
     .siswa-login .left{
         visibility: hidden;
