@@ -6,6 +6,11 @@ body,html{
     height: 100vh;
 }
 
+ol {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+}
+
 /* img background doodle */
 body {
     background: url('../img/bg-image.png') no-repeat center center fixed;
@@ -156,7 +161,7 @@ body {
 
 @media (min-width: 1024px) {
     .menu-button {
-      width: 300px;
+      width: 350px;
     }
   }
 
