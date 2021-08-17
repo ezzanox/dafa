@@ -45,11 +45,27 @@ body {
   }
 
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
     .container {
       width: 1024px;
     }
-  }
+  } */
+
+  /*new schedule */
+.new-schedules, .new-schedule .card-body{
+    border: 1px solid orange;
+}
+
+.txt-subject{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.txt-pengajar{
+    font-size: 10px;
+    margin-top: -5px;
+}
+
 
 .garis{
     height: 2px;
