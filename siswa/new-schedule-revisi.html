@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="DAFA">
+    <meta name="keywords" content="DAFA">
+    <meta name="author" content="DAFA">
+    <link rel="icon" href="#" type="image/x-icon">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <title>DAFA</title>
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="../assets/plugins/bootstrap/css/bootstrap.css">
+
+    <!-- Theme css -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/theme.css" media="screen" id="color">
+
+    <!-- main -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <!-- style tambahan -->
+    <!-- /*new schedule */
+    .new-schedules, .new-schedule .card-body{
+        border: 1px solid orange;
+    }
+    
+    .txt-subject{
+        font-size: 10px;
+        font-weight: bold;
+    }
+    
+    .txt-pengajar{
+        font-size: 8px;
+        margin-top: -5px;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .txt-pengajar{
+            font-size: 10px;
+            margin-top: -5px;
+        }
+    
+        .txt-subject{
+            font-size: 12px;
+            font-weight: bold;
+        }
+    
+        .hide-img-mb{
+            display: none;
+        }
+    }
+    
+    .bg-orange-2{
+        background-color: #E65C07;
+    } -->
+    
+</head>
+
+<body>
+    <div class="container">
+        <!-- logo only -->
+        <div class="row pt-2 pb-2 d-none">
+            <img class="navbar-brand mx-auto d-block" src="../assets/img/logo-2.png" alt="">
+        </div>
+
+        <!-- logo + text -->
+        <div class="row pt-2 pb-2 justify-content-center align-self-center">
+            <img class="navbar-brand float-right" src="../assets/img/logo-2.png" alt="">
+            <h4 class="text-center font-weight-bold justify-content-center align-self-center">Santi Information Sistem <br> (SIS)</h4>
+        </div>
+        <!-- content -->
+        <div class="row">
+            <div class="col-md-12">
+                <hr class="mt-0">
+                <h4 class="font-weight-bold text-center mb-3">M. Rizky Setiawan | 12-2021-000001</h4>
+                <hr>
+                
+                <!-- content schedule -->
+                <div class="row px-md-1">
+                    <!-- senin -->
+                    <div class="col-md-2 p-0">
+                        <!-- day -->
+                        <div class="row bg-orange-2 mx-3 mx-md-0 mb-2">
+                            <h5 class="mx-auto text-white py-2 mb-0 ">Senin</h5>
+                        </div>
+                        <!-- card schedule -->
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-md-7 col-12">
+                                        <h6 class="mb-0 text-md-left text-center txt-subject">
+                                            [Subject]
+                                        </h6>
+                                        <h6 class="mb-0 text-md-left text-center txt-pengajar txt-pengajar">
+                                            [Pengajar]
+                                        </h6>
+                                    </div>
+                                    <div class="col-5 hide-img-mb">
+                                        <img src="../assets/img/300x400.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-md-7 col-12">
+                                        <h6 class="mb-0 text-md-left text-center txt-subject">
+                                            [Subject]
+                                        </h6>
+                                        <h6 class="mb-0 text-md-left text-center txt-pengajar txt-pengajar">
+                                            [Pengajar]
+                                        </h6>
+                                    </div>
+                                    <div class="col-5 hide-img-mb">
+                                        <img src="../assets/img/300x400.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h6 class="mb-0 text-center text-md-left txt-subject">
+                                            [Subject]
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-md-7 col-12">
+                                        <h6 class="mb-0 text-md-left text-center txt-subject">
+                                            [Subject]
+                                        </h6>
+                                        <h6 class="mb-0 text-md-left text-center txt-pengajar txt-pengajar">
+                                            [Pengajar]
+                                        </h6>
+                                    </div>
+                                    <div class="col-5 hide-img-mb">
+                                        <img src="../assets/img/300x400.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-md-7 col-12">
+                                        <h6 class="mb-0 text-md-left text-center txt-subject">
+                                            [Subject]
+                                        </h6>
+                                        <h6 class="mb-0 text-md-left text-center txt-pengajar txt-pengajar">
+                                            [Pengajar]
+                                        </h6>
+                                    </div>
+                                    <div class="col-5 hide-img-mb">
+                                        <img src="../assets/img/300x400.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h6 class="mb-0 text-center text-md-left txt-subject">
+                                            [Subject]
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-md-7 col-12">
+                                        <h6 class="mb-0 text-md-left text-center txt-subject">
+                                            [Subject]
+                                        </h6>
+                                        <h6 class="mb-0 text-md-left text-center txt-pengajar txt-pengajar">
+                                            [Pengajar]
+                                        </h6>
+                                    </div>
+                                    <div class="col-5 hide-img-mb">
+                                        <img src="../assets/img/300x400.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card schedule -->
+                    </div>
+                    <!-- selasa -->
+                    <div class="col-md-2 p-0">
+                        <!-- day -->
+                        <div class="row bg-orange-2 mx-3 mx-md-0 mb-2">
+                            <h5 class="mx-auto text-white py-2 mb-0 ">Selasa</h5>
+                        </div>
+                        <!-- card schedule -->
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-md-7 col-12">
+                                        <h6 class="mb-0 text-md-left text-center txt-subject">
+                                            [Subject]
+                                        </h6>
+                                        <h6 class="mb-0 text-md-left text-center txt-pengajar txt-pengajar">
+                                            [Pengajar]
+                                        </h6>
+                                    </div>
+                                    <div class="col-5 hide-img-mb">
+                                        <img src="../assets/img/300x400.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-md-7 col-12">
+                                        <h6 class="mb-0 text-md-left text-center txt-subject">
+                                            [Subject]
+                                        </h6>
+                                        <h6 class="mb-0 text-md-left text-center txt-pengajar txt-pengajar">
+                                            [Pengajar]
+                                        </h6>
+                                    </div>
+                                    <div class="col-5 hide-img-mb">
+                                        <img src="../assets/img/300x400.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h6 class="mb-0 text-center text-md-left txt-subject">
+                                            [Subject]
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-md-7 col-12">
+                                        <h6 class="mb-0 text-md-left text-center txt-subject">
+                                            [Subject]
+                                        </h6>
+                                        <h6 class="mb-0 text-md-left text-center txt-pengajar txt-pengajar">
+                                            [Pengajar]
+                                        </h6>
+                                    </div>
+                                    <div class="col-5 hide-img-mb">
+                                        <img src="../assets/img/300x400.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-md-7 col-12">
+                                        <h6 class="mb-0 text-md-left text-center txt-subject">
+                                            [Subject]
+                                        </h6>
+                                        <h6 class="mb-0 text-md-left text-center txt-pengajar txt-pengajar">
+                                            [Pengajar]
+                                        </h6>
+                                    </div>
+                                    <div class="col-5 hide-img-mb">
+                                        <img src="../assets/img/300x400.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h6 class="mb-0 text-center text-md-left txt-subject">
+                                            [Subject]
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-md-7 col-12">
+                                        <h6 class="mb-0 text-md-left text-center txt-subject">
+                                            [Subject]
+                                        </h6>
+                                        <h6 class="mb-0 text-md-left text-center txt-pengajar txt-pengajar">
+                                            [Pengajar]
+                                        </h6>
+                                    </div>
+                                    <div class="col-5 hide-img-mb">
+                                        <img src="../assets/img/300x400.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card schedule -->
+                    </div>
+                    <!-- rabu -->
+                    <div class="col-md-2 p-0">
+                        <!-- day -->
+                        <div class="row bg-orange-2 mx-3 mx-md-0 mb-2">
+                            <h5 class="mx-auto text-white py-2 mb-0 ">Rabu</h5>
+                        </div>
+                        <!-- card schedule -->
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-md-7 col-12">
+                                        <h6 class="mb-0 text-md-left text-center txt-subject">
+                                            [Subject]
+                                        </h6>
+                                        <h6 class="mb-0 text-md-left text-center txt-pengajar txt-pengajar">
+                                            [Pengajar]
+                                        </h6>
+                                    </div>
+                                    <div class="col-5 hide-img-mb">
+                                        <img src="../assets/img/300x400.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-md-7 col-12">
+                                        <h6 class="mb-0 text-md-left text-center txt-subject">
+                                            [Subject]
+                                        </h6>
+                                        <h6 class="mb-0 text-md-left text-center txt-pengajar txt-pengajar">
+                                            [Pengajar]
+                                        </h6>
+                                    </div>
+                                    <div class="col-5 hide-img-mb">
+                                        <img src="../assets/img/300x400.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h6 class="mb-0 text-center text-md-left txt-subject">
+                                            [Subject]
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-md-7 col-12">
+                                        <h6 class="mb-0 text-md-left text-center txt-subject">
+                                            [Subject]
+                                        </h6>
+                                        <h6 class="mb-0 text-md-left text-center txt-pengajar txt-pengajar">
+                                            [Pengajar]
+                                        </h6>
+                                    </div>
+                                    <div class="col-5 hide-img-mb">
+                                        <img src="../assets/img/300x400.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h6 class="mb-0 text-center text-md-left txt-subject">
+                                            [Subject]
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-md-7 col-12">
+                                        <h6 class="mb-0 text-md-left text-center txt-subject">
+                                            [Subject]
+                                        </h6>
+                                        <h6 class="mb-0 text-md-left text-center txt-pengajar txt-pengajar">
+                                            [Pengajar]
+                                        </h6>
+                                    </div>
+                                    <div class="col-5 hide-img-mb">
+                                        <img src="../assets/img/300x400.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-md-7 col-12">
+                                        <h6 class="mb-0 text-md-left text-center txt-subject">
+                                            [Subject]
+                                        </h6>
+                                        <h6 class="mb-0 text-md-left text-center txt-pengajar txt-pengajar">
+                                            [Pengajar]
+                                        </h6>
+                                    </div>
+                                    <div class="col-5 hide-img-mb">
+                                        <img src="../assets/img/300x400.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card schedule -->
+                    </div>
+                    <!-- kamis -->
+                    <div class="col-md-2 p-0">
+                        <!-- day -->
+                        <div class="row bg-orange-2 mx-3 mx-md-0 mb-2">
+                            <h5 class="mx-auto text-white py-2 mb-0 ">Kamis</h5>
+                        </div>
+                        <!-- card schedule -->
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-md-7 col-12">
+                                        <h6 class="mb-0 text-md-left text-center txt-subject">
+                                            [Subject]
+                                        </h6>
+                                        <h6 class="mb-0 text-md-left text-center txt-pengajar txt-pengajar">
+                                            [Pengajar]
+                                        </h6>
+                                    </div>
+                                    <div class="col-5 hide-img-mb">
+                                        <img src="../assets/img/300x400.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-md-7 col-12">
+                                        <h6 class="mb-0 text-md-left text-center txt-subject">
+                                            [Subject]
+                                        </h6>
+                                        <h6 class="mb-0 text-md-left text-center txt-pengajar txt-pengajar">
+                                            [Pengajar]
+                                        </h6>
+                                    </div>
+                                    <div class="col-5 hide-img-mb">
+                                        <img src="../assets/img/300x400.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h6 class="mb-0 text-center text-md-left txt-subject">
+                                            [Subject]
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-md-7 col-12">
+                                        <h6 class="mb-0 text-md-left text-center txt-subject">
+                                            [Subject]
+                                        </h6>
+                                        <h6 class="mb-0 text-md-left text-center txt-pengajar txt-pengajar">
+                                            [Pengajar]
+                                        </h6>
+                                    </div>
+                                    <div class="col-5 hide-img-mb">
+                                        <img src="../assets/img/300x400.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-md-7 col-12">
+                                        <h6 class="mb-0 text-md-left text-center txt-subject">
+                                            [Subject]
+                                        </h6>
+                                        <h6 class="mb-0 text-md-left text-center txt-pengajar txt-pengajar">
+                                            [Pengajar]
+                                        </h6>
+                                    </div>
+                                    <div class="col-5 hide-img-mb">
+                                        <img src="../assets/img/300x400.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h6 class="mb-0 text-center text-md-left txt-subject">
+                                            [Subject]
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-md-7 col-12">
+                                        <h6 class="mb-0 text-md-left text-center txt-subject">
+                                            [Subject]
+                                        </h6>
+                                        <h6 class="mb-0 text-md-left text-center txt-pengajar txt-pengajar">
+                                            [Pengajar]
+                                        </h6>
+                                    </div>
+                                    <div class="col-5 hide-img-mb">
+                                        <img src="../assets/img/300x400.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card schedule -->
+                    </div>
+                    <!-- jumat -->
+                    <div class="col-md-2 p-0">
+                        <!-- day -->
+                        <div class="row bg-orange-2 mx-3 mx-md-0 mb-2">
+                            <h5 class="mx-auto text-white py-2 mb-0 ">Jumat</h5>
+                        </div>
+                        <!-- card schedule -->
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-md-7 col-12">
+                                        <h6 class="mb-0 text-md-left text-center txt-subject">
+                                            [Subject]
+                                        </h6>
+                                        <h6 class="mb-0 text-md-left text-center txt-pengajar txt-pengajar">
+                                            [Pengajar]
+                                        </h6>
+                                    </div>
+                                    <div class="col-5 hide-img-mb">
+                                        <img src="../assets/img/300x400.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-md-7 col-12">
+                                        <h6 class="mb-0 text-md-left text-center txt-subject">
+                                            [Subject]
+                                        </h6>
+                                        <h6 class="mb-0 text-md-left text-center txt-pengajar txt-pengajar">
+                                            [Pengajar]
+                                        </h6>
+                                    </div>
+                                    <div class="col-5 hide-img-mb">
+                                        <img src="../assets/img/300x400.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h6 class="mb-0 text-center text-md-left txt-subject">
+                                            [Subject]
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-md-7 col-12">
+                                        <h6 class="mb-0 text-md-left text-center txt-subject">
+                                            [Subject]
+                                        </h6>
+                                        <h6 class="mb-0 text-md-left text-center txt-pengajar txt-pengajar">
+                                            [Pengajar]
+                                        </h6>
+                                    </div>
+                                    <div class="col-5 hide-img-mb">
+                                        <img src="../assets/img/300x400.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h6 class="mb-0 text-center text-md-left txt-subject">
+                                            [Subject]
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-md-7 col-12">
+                                        <h6 class="mb-0 text-md-left text-center txt-subject">
+                                            [Subject]
+                                        </h6>
+                                        <h6 class="mb-0 text-md-left text-center txt-pengajar txt-pengajar">
+                                            [Pengajar]
+                                        </h6>
+                                    </div>
+                                    <div class="col-5 hide-img-mb">
+                                        <img src="../assets/img/300x400.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card schedule -->
+                    </div>
+                    <!-- sabtu -->
+                    <div class="col-md-2 p-0">
+                        <!-- day -->
+                        <div class="row bg-orange-2 mx-3 mx-md-0 mb-2">
+                            <h5 class="mx-auto text-white py-2 mb-0 ">Sabtu</h5>
+                        </div>
+                        <!-- card schedule -->
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-md-7 col-12">
+                                        <h6 class="mb-0 text-md-left text-center txt-subject">
+                                            [Subject]
+                                        </h6>
+                                        <h6 class="mb-0 text-md-left text-center txt-pengajar txt-pengajar">
+                                            [Pengajar]
+                                        </h6>
+                                    </div>
+                                    <div class="col-5 hide-img-mb">
+                                        <img src="../assets/img/300x400.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-md-7 col-12">
+                                        <h6 class="mb-0 text-md-left text-center txt-subject">
+                                            [Subject]
+                                        </h6>
+                                        <h6 class="mb-0 text-md-left text-center txt-pengajar txt-pengajar">
+                                            [Pengajar]
+                                        </h6>
+                                    </div>
+                                    <div class="col-5 hide-img-mb">
+                                        <img src="../assets/img/300x400.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h6 class="mb-0 text-center text-md-left txt-subject">
+                                            [Subject]
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card new-schedule border-0 p-0 px-3 px-md-1 mb-2">
+                            <div class="card-header p-1 text-center bg-orange rounded-0">
+                                <h6 class="mb-0 text-white">HH:MM - HH:MM</h6>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-md-7 col-12">
+                                        <h6 class="mb-0 text-md-left text-center txt-subject">
+                                            [Subject]
+                                        </h6>
+                                        <h6 class="mb-0 text-md-left text-center txt-pengajar txt-pengajar">
+                                            [Pengajar]
+                                        </h6>
+                                    </div>
+                                    <div class="col-5 hide-img-mb">
+                                        <img src="../assets/img/300x400.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card schedule -->
+                    </div>
+                </div>
+                <!-- content schedule -->
+
+                <!-- button back -->
+                <button class="btn btn-orange btn-sm m-4 pl-4 pr-4 f-400 text-capitalize mx-auto d-block">Back</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- tap to top -->
+    <div class="tap-top top-cls">
+        <div>
+            <i class="fa fa-angle-double-up"></i>
+        </div>
+    </div>
+    <!-- tap to top end -->
+
+    <!-- jquery-->
+    <script src="../assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="../assets/plugins/bootstrap/js/bootstrap.js"></script>
+
+</body>
+</html>
