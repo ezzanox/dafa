@@ -61,6 +61,7 @@ body {
     font-weight: bold;
 }
 
+
 .txt-pengajar{
     font-size: 8px;
     margin-top: -5px;
@@ -172,7 +173,7 @@ body {
 }
 
 .bg-orange{
-    background-color: #F69522;
+    background-color: #ff8124;
     color: white;
 }
 
@@ -363,3 +364,17 @@ body {
       width: 400px;
     }
   }
+
+
+/*  */
+.color-grey {
+    color: #8c8c8c;
+}
+
+.w-25pc {
+    width: 25%;
+}
+
+.border-top-orange { 
+    border-top : 1px solid #F69522;
+}

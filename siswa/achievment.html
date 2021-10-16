@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="../assets/plugins/bootstrap/css/bootstrap.css">
+
+    <!-- Theme css -->
+    <!-- <link rel="stylesheet" type="text/css" href="../assets/css/theme.css" media="screen" id="color"> -->
+
+    <!-- main -->
+    <link rel="stylesheet" href="../assets/css/main-upgrade.css">
+
+    <link rel="stylesheet" href="../assets/plugins/select2-bootstrap4-theme-master/dist/select2-bootstrap4.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../assets/css/select-orange.css">
+    
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <!-- logo + text -->
+    <div class="container">
+        <div class="row pt-2 pb-2 justify-content-center align-self-center">
+            <img class="navbar-brand float-right" src="../assets/img/logo-2.png" alt="">
+            <h4 class="text-center font-weight-bold justify-content-center align-self-center">Santi Information Sistem <br> (SIS)</h4>
+        </div>
+        
+        <!-- select subject -->
+        <div class="row wr-500 mx-auto py-2">
+            <div class="col-md-6 pb-2 py-md-0">
+                <select class="form-control rounded-0 border-orange select-no-search" name="" id="">
+                    <option value="">Select Subject</option>
+                    <option value="">Subject 1</option>
+                    <option value="">Subject 2</option>
+                </select>
+            </div>
+            <div class="col-md-6 pb-2 py-md-0">
+                <button class="btn btn-block font-weight-bold rounded-0  mx-auto d-block px-2 py-2 text-capitalize btn-orange">Refresh</button>
+            </div>
+        </div>
+
+        <div class="">
+          <div class="col-12">
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+
+        <button class="btn my-3 font-weight-bold px-md-5 mx-auto d-block px-5 py-2 text-capitalize btn-orange">Back</button>
+        
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <!-- jquery-->
+     <script src="../assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+
+     <!-- bootstrap -->
+     <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+ 
+     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <!-- chart js -->
+    <!-- <script src="../assets/plugins/Chart.js-3.5.1/src/index.js"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script> -->
+    <script>
+        $(document).ready(function() {
+            $('.select-no-search').select2({
+                theme: 'bootstrap4',
+                minimumResultsForSearch: -1
+                // display: inline-block
+            });
+
+        });
+    </script>
+
+    <script>
+      var ctx = document.getElementById('myChart');
+      var myChart = new Chart(ctx, {
+          type: 'line',
+          data: {
+              labels: ['1', '2', '3', '4', 'PTS', '5', '6', '7', '8', 'PAS'],
+              datasets: [{
+                  label: ['Pengetahuan'],
+                  data: [72, 79, 69, 88, 78],
+                  backgroundColor: [
+                  'blue'
+                  ],
+                  borderColor: [
+                    'blue'
+                  ],
+                  borderWidth: 1
+              },
+              {
+                  label: ['ketrampilan'],
+                  data: [78, 88, 60, 82, 87],
+                  backgroundColor: [
+                  'green'
+                  ],
+                  borderColor: [
+                    'green'
+                  ],
+                  borderWidth: 1
+              }
+            ], 
+          },
+          options: {
+            scaleShowVerticalLines: false,
+              scales: {
+                  y: {
+                      beginAtZero: true,
+                      min : 0,
+                      max : 100
+                  },
+                  x : {
+                    grid : {
+                      display : false
+                    }
+                  },
+              }
+          }
+      });
+      </script>
+  </body>
+</html>
+
+
+
+<!-- options : {
+  scales : {
+      xAxes : [ {
+          gridLines : {
+              display : false
+          }
+      } ]
+  }
+} -->

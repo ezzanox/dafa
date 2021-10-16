@@ -1,0 +1,4 @@
+.select2-container--bootstrap4 .select2-selection  { 
+    border: 1px solid #F69522 !important;
+    border-radius: 0;
+}

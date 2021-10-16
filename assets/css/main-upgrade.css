@@ -1,0 +1,150 @@
+body {
+    background: url('../img/bg-image.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height:100%;
+}
+
+.border-top-orange { 
+    border-top : 1px solid #F69522;
+}
+
+.border-orange { 
+    border : 1px solid #F69522;
+}
+
+.border-py-orange {
+    border-top : 1px solid #F69522;
+    border-bottom : 1px solid #F69522;
+}
+
+table.table-bordered > tbody > tr > td, table.table-bordered > thead > tr > th {
+    border:1px solid #F69522;
+  }
+
+  table.table-bordered > tbody > tr > td{
+      background-color: white;
+  }
+
+.bg-orange{
+    background-color: #ff8124;
+    color: white;
+}
+
+.color-grey {
+    color: #8c8c8c;
+}
+
+.color-orange {
+    color: #F69522;
+}
+
+.btn-orange{
+    background-color:#ff8124;
+    color : white;
+}
+
+.text-biru-terang{
+    color: #007FD8;
+}
+
+.panduan{
+    height: 50%;
+}
+
+.text-blue{
+    color: #086DBF;
+}
+
+.lh-16{
+    line-height: 16px;
+}
+
+@media (max-width: 768px) {
+    .border-mobile{
+        border: 1px solid #DEE2E6;
+        margin: 10px;
+        padding: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .wr-500{
+        width: 100%;
+        max-width: 500px;   
+    }
+
+}
+
+@media (min-width: 768px) {
+    .wr-750{
+        width: 100%;
+        max-width: 750px;   
+    }
+
+}
+
+/* select {
+    -webkit-appearance: none;
+    appearance: none;
+  } */
+
+  .select-wrapper {
+    position: relative;
+  }
+  
+  .select-wrapper::after {
+    content: "▼";
+    font-size: 1rem;
+    top: 6px;
+    right: 10px;
+    position: absolute;
+    color:  #F69522;
+  }
+
+  .bg-orange-nav {
+      background-color: #f68736;
+  }
+
+  .bg-orange-dropdown {
+    background-color: #f59751;
+    border-bottom-left-radius: 1rem;
+
+  }
+
+  .dropdown-menu-center {
+    right: auto;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    border-bottom-left-radius: 1rem;
+}
+
+.dropdown-menu .dropdown-item > li > a:hover {
+    background-image: none;
+    background-color: #000;
+  }
+
+  .dropdown-menu { 
+    border-bottom-left-radius: 1rem;
+
+  }
+
+  @media (max-width: 768px) {
+    .navbar-desktop{
+        display: none;
+    }    
+}
+@media (min-width : 768px) {
+    .navbar-mobile {
+        display: none;
+    }
+}
+
+.color-white {
+    color: white;
+}
+
