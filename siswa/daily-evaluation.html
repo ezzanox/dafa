@@ -50,11 +50,11 @@
                 </select>
             </div>
             <div class="col-md-4 pb-2 py-md-0">
-                <button class="btn btn-block font-weight-bold rounded-0  mx-auto d-block px-2 py-2 text-capitalize btn-orange">Refresh</button>
+                <button class="btn btn-block font-weight-bold rounded  mx-auto d-block px-2 py-2 text-capitalize btn-orange">Refresh</button>
             </div>
         </div>
 
-        <div class="">
+        <div class="pt-3">
           <div class="col-12">
             <canvas id="myChart"></canvas>
           </div>
@@ -78,10 +78,12 @@
      <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
     <!-- chart js -->
-    <!-- <script src="../assets/plugins/Chart.js-3.5.1/src/index.js"></script> -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
     <script>
         $(document).ready(function() {
             $('.select-no-search').select2({
@@ -90,56 +92,90 @@
                 // display: inline-block
             });
 
-        });
-    </script>
 
-    <script>
-      var ctx = document.getElementById('myChart');
-      var myChart = new Chart(ctx, {
-          type: 'line',
-          data: {
-              labels: ['1', '2', '3', '4', 'PTS', '5', '6', '7', '8', 'PAS'],
-              datasets: [{
-                  label: ['Pengetahuan'],
-                  data: [72, 79, 69, 88, 78],
-                  backgroundColor: [
-                  'blue'
-                  ],
-                  borderColor: [
-                    'blue'
-                  ],
-                  borderWidth: 1
-              },
-              {
-                  label: ['ketrampilan'],
-                  data: [78, 88, 60, 82, 87],
-                  backgroundColor: [
-                  'green'
-                  ],
-                  borderColor: [
-                    'green'
-                  ],
-                  borderWidth: 1
-              }
-            ], 
-          },
-          options: {
-            scaleShowVerticalLines: false,
-              scales: {
-                  y: {
+
+            // sdsd
+            var colors = ['white','white','white','white','white'];
+            var colors1 = Object.assign([], colors);
+            colors1.sort();
+            var ctx = document.getElementById("myChart");
+            var myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['1', '2', '3', '4', 'PTS', '5', '6', '7', '8', 'PAS'],
+                    datasets: [{
+                        label: ['Pengetahuan'],
+                        data: [72, 79, 69, 88, 78],
+                        borderColor: 'blue',
+                        borderWidth: 4,
+                        fill: false,
+                        backgroundColor : 'blue',
+                        pointBackgroundColor: 'white',
+                        pointRadius : 5
+
+                    },
+                    {
+                        label: ['ketrampilan'],
+                        data: [78, 88, 60, 82, 87],
+                        borderColor: 'green',
+                        backgroundColor : 'green',
+                        fill: false,
+                        borderWidth: 4,
+                        pointBackgroundColor: 'white',
+                        pointRadius : 5
+
+
+                    }
+                  ], 
+                },
+                options: {
+                  legend: {
+                      labels: {
+                          // fontColor: "blue",
+                          fontSize: 40,
+                          position : 'bottom'
+                      }
+                  },
+                  plugins : {
+                    legend : {
+                      // fontSize: 40,
+                      position : 'bottom',
+                      align : 'end'
+
+                    }
+                  },
+                  animation: {
+                      duration: 2000,
+                  },
+                  scales: {
+                    x: {
+                      grid: {
+                        // tickColor: 'red'
+                      },
+                      ticks: {
+                        // color: 'blue',
+                        font : {
+                          // style : 'bold',
+                          weight : 'bold',
+                          // size : 16
+                        }
+                      }
+                    },
+                    y : {
                       beginAtZero: true,
                       min : 0,
                       max : 100
-                  },
-                  x : {
-                    grid : {
-                      display : false
                     }
                   },
-              }
-          }
-      });
-      </script>
+                }
+            });
+
+        });
+    </script>
+
+
+
+
   </body>
 </html>
 
@@ -154,3 +190,73 @@
       } ]
   }
 } -->
+
+
+
+<!-- options: {
+  scaleShowVerticalLines: false,
+    scales: {
+        y: {
+            beginAtZero: true,
+            min : 0,
+            max : 100
+        },
+    },
+  }
+} -->
+
+
+<!-- <script>
+  var ctx = document.getElementById('myChart');
+  // Chart.defaults.global.defaultFontStyle = '600';
+  var myChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+          labels: ['1', '2', '3', '4', 'PTS', '5', '6', '7', '8', 'PAS'],
+          datasets: [{
+              label: ['Pengetahuan'],
+              data: [72, 79, 69, 88, 78],
+              backgroundColor: [
+              'blue'
+              ],
+              borderColor: [
+                'blue'
+              ],
+              borderWidth: 1
+          },
+          {
+              label: ['ketrampilan'],
+              data: [78, 88, 60, 82, 87],
+              backgroundColor: [
+              'green'
+              ],
+              borderColor: [
+                'green'
+              ],
+              borderWidth: 1
+          }
+        ], 
+      },
+      options: {
+          scales: {
+              yAxes: [{
+                  ticks: {
+                      beginAtZero:true
+                  }
+              }],
+              yAxes: [{
+                  ticks: {
+                      fontSize: 30,
+                      fontStyle : 'bold'
+                  }
+              }],
+              xAxes: [{
+                  ticks: {
+                      fontSize: 30,
+                      fontStyle : 'bold'
+                  }
+              }]
+          }
+      }
+  });
+  </script> -->

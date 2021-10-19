@@ -19,6 +19,8 @@
     <!-- Bootstrap css -->
     <link rel="stylesheet" type="text/css" href="../assets/plugins/bootstrap/css/bootstrap.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
     <!-- Theme css -->
     <!-- <link rel="stylesheet" type="text/css" href="../assets/css/theme.css" media="screen" id="color"> -->
 
@@ -29,46 +31,54 @@
 <body>
   
     <div class="navbar-desktop">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg">
         <!-- <a class="navbar-brand" href="#">Navbar</a> -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav bg-orange-nav mx-auto">
-            <li class="nav-item px-5 py-2 dropdown">
-              <a class="nav-link dropdown-toggle mx-5 text-white font-weight-bold" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Administration</a>
-                <div class="dropdown-menu dropdown-menu-center rounded-bottom border-0 bg-orange-dropdown "  style="width: 85%;" aria-labelledby="navbarDropdownMenuLink">
+          <ul class="navbar-nav bg-orange-navs nav-bg mx-auto">
+            <li class="nav-item px-xl-2 px-lg-1 py-1 dropdown bg-warnings">
+              <a class="nav-link dropdown-toggle mx-5 text-white font-weight-bold" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Administration
+                <i class="fas fa-caret-left mx-2 nav-icon-arrow"></i>
+              </a>
+                <div class="dropdown-menu mt-0 dropdown-menu-center border-0 bg-orange-dropdown "  style="width: 90%;" aria-labelledby="navbarDropdownMenuLink">
                   <a class="dropdown-item text-white font-weight-bold bg-transparent" href="#">Attendance History</a>
                   <a class="dropdown-item text-white font-weight-bold bg-transparent" href="#">Medical Record</a>
                   <a class="dropdown-item text-white font-weight-bold bg-transparent" href="#">History of Violation</a>
                 </div>
             </li>
-            <li class="nav-item px-5 py-2 dropdown">
-              <a class="nav-link dropdown-toggle mx-5 text-white font-weight-bold" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Academic</a>
-                <div class="dropdown-menu dropdown-menu-center rounded-bottom border-0 bg-orange-dropdown "  style="width: 85%;" aria-labelledby="navbarDropdownMenuLink">
+            <li class="nav-item px-xl-2 px-lg-1 py-1 dropdown bg-primarys">
+              <a class="nav-link dropdown-toggle mx-5 text-white font-weight-bold" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Academic
+                <i class="fas fa-caret-left mx-2 nav-icon-arrow"></i>
+              </a>
+                <div class="dropdown-menu mt-0 dropdown-menu-center rounded-bottom border-0 bg-orange-dropdown "  style="width: 90%;" aria-labelledby="navbarDropdownMenuLink">
                   <a class="dropdown-item text-white font-weight-bold bg-transparent" href="#">Daily Evaluation</a>
                   <a class="dropdown-item text-white font-weight-bold bg-transparent" href="#">Achievment</a>
                   <a class="dropdown-item text-white font-weight-bold bg-transparent" href="#">Something else here</a>
                 </div>
             </li>
-            <li class="nav-item px-5 py-2 dropdown">
-              <a class="nav-link dropdown-toggle mx-5 text-white font-weight-bold" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Finance</a>
-                <div class="dropdown-menu dropdown-menu-center rounded-bottom border-0 bg-orange-dropdown "  style="width: 85%;" aria-labelledby="navbarDropdownMenuLink">
+            <li class="nav-item px-xl-2 px-lg-1 py-1 dropdown bg-warnings">
+              <a class="nav-link dropdown-toggle mx-5 text-white font-weight-bold" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Finance
+                <i class="fas fa-caret-left mx-2 nav-icon-arrow"></i>
+              </a>
+                <div class="dropdown-menu mt-0 dropdown-menu-center rounded-bottom border-0 bg-orange-dropdown "  style="width: 90%;" aria-labelledby="navbarDropdownMenuLink">
                   <a class="dropdown-item text-white font-weight-bold bg-transparent" href="#">Online Payment</a>
                   <a class="dropdown-item text-white font-weight-bold bg-transparent" href="#">Payment History</a>
                   <a class="dropdown-item text-white font-weight-bold bg-transparent" href="#">Saving</a>
                 </div>
             </li>
-            <li class="nav-item px-5 py-2 dropdown">
-              <a class="nav-link dropdown-toggle mx-5 text-white font-weight-bold" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Transaction</a>
-                <div class="dropdown-menu dropdown-menu-center rounded-bottom border-0 bg-orange-dropdown "  style="width: 85%;" aria-labelledby="navbarDropdownMenuLink">
+            <li class="nav-item px-xl-2 px-lg-1 py-1 dropdown bg-primarys">
+              <a class="nav-link dropdown-toggle mx-5 text-white font-weight-bold" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Transaction
+                <i class="fas fa-caret-left mx-2 nav-icon-arrow"></i>
+              </a>
+                <div class="dropdown-menu mt-0 dropdown-menu-center rounded-bottom border-0 bg-orange-dropdown "  style="width: 90%;" aria-labelledby="navbarDropdownMenuLink">
                   <a class="dropdown-item text-white font-weight-bold bg-transparent" href="#">E-Money</a>
                   <a class="dropdown-item text-white font-weight-bold bg-transparent" href="#">Transaction</a>
                   <a class="dropdown-item text-white font-weight-bold bg-transparent" href="#">Transaction History</a>
                 </div>
             </li>
-            <li class="nav-item px-5 py-2">
+            <li class="nav-item px-xl-2 px-lg-1 py-1 bg-warnings">
               <a class="nav-link mx-5 text-white font-weight-bold" href="#">Logout</a>
             </li>
           </ul>
@@ -124,13 +134,36 @@
       </nav>
     </div>
 
-
-
     <!-- jquery-->
     <script src="../assets/plugins/jquery/jquery-3.3.1.min.js"></script>
 
     <!-- bootstrap -->
     <script src="../assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // $('.navbar .dropdown').hover(function() {
+      //   $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown(); // show
+      // }, function() {
+      //   $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp() // hide
+      // });
+        // Add slideDown animation to Bootstrap dropdown when expanding.
+  $('.dropdown').on('show.bs.dropdown', function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+    $(this).find('.nav-icon-arrow').css({
+      "vertical-align" : "center",
+      "transform" : "rotate(-90deg)"
+    });
+  });
+
+  // Add slideUp animation to Bootstrap dropdown when collapsing.
+  $('.dropdown').on('hide.bs.dropdown', function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+    $(this).find('.nav-icon-arrow').css({
+      "vertical-align" : "center",
+      "transform" : "rotate(360deg)"
+    }); 
+  });
+    </script>
     
 
 </body>
