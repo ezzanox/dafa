@@ -42,7 +42,7 @@
                 </select>
             </div>
             <div class="col-md-6 pb-2 py-md-0">
-                <button class="btn btn-block font-weight-bold rounded-0  mx-auto d-block px-2 py-2 text-capitalize btn-orange">Refresh</button>
+                <button class="btn btn-block font-weight-bold rounded  mx-auto d-block px-2 py-2 text-capitalize btn-orange">Refresh</button>
             </div>
         </div>
 
@@ -69,7 +69,8 @@
     <!-- chart js -->
     <!-- <script src="../assets/plugins/Chart.js-3.5.1/src/index.js"></script> -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script> -->
     <script>
         $(document).ready(function() {
@@ -87,46 +88,62 @@
       var myChart = new Chart(ctx, {
           type: 'line',
           data: {
-              labels: ['1', '2', '3', '4', 'PTS', '5', '6', '7', '8', 'PAS'],
+              labels: ['I (Gasal)', 'I (Genap)','II (Gasal)', 'II (Genap)','III (Gasal)', 'III (Genap)',],
               datasets: [{
                   label: ['Pengetahuan'],
                   data: [72, 79, 69, 88, 78],
-                  backgroundColor: [
-                  'blue'
-                  ],
-                  borderColor: [
-                    'blue'
-                  ],
-                  borderWidth: 1
+                  borderColor: 'blue',
+                  borderWidth: 4,
+                  fill: false,
+                  backgroundColor : 'blue',
+                  pointBackgroundColor: 'white',
+                  pointRadius : 5
               },
               {
                   label: ['ketrampilan'],
                   data: [78, 88, 60, 82, 87],
-                  backgroundColor: [
-                  'green'
-                  ],
-                  borderColor: [
-                    'green'
-                  ],
-                  borderWidth: 1
+                  borderColor: 'green',
+                  backgroundColor : 'green',
+                  fill: false,
+                  borderWidth: 4,
+                  pointBackgroundColor: 'white',
+                  pointRadius : 5
               }
             ], 
           },
           options: {
-            scaleShowVerticalLines: false,
-              scales: {
-                  y: {
+                  plugins : {
+                    legend : {
+                      // fontSize: 40,
+                      position : 'bottom',
+                      align : 'end'
+
+                    }
+                  },
+                  animation: {
+                      duration: 2000,
+                  },
+                  scales: {
+                    x: {
+                      grid: {
+                        // tickColor: 'red'
+                      },
+                      ticks: {
+                        // color: 'blue',
+                        font : {
+                          // style : 'bold',
+                          weight : 'bold',
+                          // size : 16
+                        }
+                      }
+                    },
+                    y : {
                       beginAtZero: true,
                       min : 0,
                       max : 100
-                  },
-                  x : {
-                    grid : {
-                      display : false
                     }
                   },
-              }
-          }
+                }
       });
       </script>
   </body>
